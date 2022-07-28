@@ -1,6 +1,6 @@
 const RunningActivity = require('../models/runningActivityModel');
 const CyclingActivity = require('../models/cyclingActivityModel');
-const APIFeatures = require('../utils/APIFeatures');
+const APIFeatures = require('../utils/apiFeatures');
 
 const modelToUse = (request) => {
   if (request.originalUrl.includes('running-records')) return RunningActivity;
